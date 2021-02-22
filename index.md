@@ -1,6 +1,6 @@
 ## Testing webpages
 
-[Camera page](.\cam.html) which allows using camera in mobile devices via Safari(iOS)/Chrome(Android)
+[Camera page](./cam.html) which allows using camera in mobile devices via Safari(iOS)/Chrome(Android)
 
 ## Welcome to GitHub Pages
 
