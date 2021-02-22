@@ -1,3 +1,7 @@
+## Testing webpages
+
+[Camera page](.\cam.html) which allows using camera in mobile devices via Safari(iOS)/Chrome(Android)
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/T0mCh/CHr0n1c1e/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
