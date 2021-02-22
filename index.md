@@ -1,6 +1,6 @@
 ## Testing webpages
 
-[Camera page](https://github.com/T0mCh/CHr0n1c1e/blob/gh-pages/Cam.html) which allows using camera in mobile devices via Safari(iOS)/Chrome(Android)
+[Camera page](https://t0mch.github.io/CHr0n1c1e/Cam.html) which allows using camera in mobile devices via Safari(iOS)/Chrome(Android)
 
 ## Welcome to GitHub Pages
 
