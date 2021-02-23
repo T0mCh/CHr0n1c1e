@@ -92,6 +92,7 @@ const cameraView = document.querySelector("#camera--view"),
     cameraSwap = document.querySelector("#camera--swap")
 // Access the device camera and stream to cameraView
 function cameraStart() {
+  try {
     navigator.mediaDevices
         .getUserMedia(constraints)
         .then(function(stream) {
@@ -101,6 +102,9 @@ function cameraStart() {
     .catch(function(error) {
         console.error("Oops. Something is broken.", error);
     });
+  } 
+  catch(err) {
+  }
 }
   
 function cameraPause() {
