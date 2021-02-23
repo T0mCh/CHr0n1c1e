@@ -118,6 +118,8 @@ cameraTrigger.onclick = function() {
   
 cameraSwap.onClick = function() {
   cameraPause();
+  if(constraints.video.facingMode == "user") constraints.video.facingMode = "environment";
+     else constraints.video.facingMode == "user";
   cameraStart();
 };
 // Start the video stream when the window loads
