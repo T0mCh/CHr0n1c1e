@@ -41,6 +41,7 @@ function cameraStart() {
     });
   } 
   catch(err) {
+      console.log(err);
   }
 }
 // Start the video stream when the window loads
