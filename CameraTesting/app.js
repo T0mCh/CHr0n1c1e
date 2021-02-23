@@ -6,22 +6,6 @@ const cameraView = document.querySelector("#camera--view"),
     cameraSensor = document.querySelector("#camera--sensor"),
     cameraTrigger = document.querySelector("#camera--trigger"),
     cameraSwap = document.querySelector("#camera--swap")
-// Access the device camera and stream to cameraView
-function cameraStart() {
-  try {
-    navigator.mediaDevices
-        .getUserMedia(constraints)
-        .then(function(stream) {
-        track = stream.getTracks()[0];
-        cameraView.srcObject = stream;
-    })
-    .catch(function(error) {
-        //console.error("Oops. Something is broken.", error);
-    });
-  } 
-  catch(err) {
-  }
-}
   
 function cameraPause() {
   cameraView.pause();
@@ -42,5 +26,22 @@ cameraSwap.onClick = function() {
      else constraints.video.facingMode = "user";
   cameraStart();
 };
+
+// Access the device camera and stream to cameraView
+function cameraStart() {
+  try {
+    navigator.mediaDevices
+        .getUserMedia(constraints)
+        .then(function(stream) {
+        track = stream.getTracks()[0];
+        cameraView.srcObject = stream;
+    })
+    .catch(function(error) {
+        //console.error("Oops. Something is broken.", error);
+    });
+  } 
+  catch(err) {
+  }
+}
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
